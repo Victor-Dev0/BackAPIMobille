@@ -53,6 +53,14 @@ namespace BackAPI
                     options.DocExpansion(Swashbuckle.AspNetCore.SwaggerUI.DocExpansion.None);
                 });
             }
+            else
+            {
+                app.UseSwagger();
+                app.UseSwaggerUI(options =>
+                {
+                    options.DocExpansion(Swashbuckle.AspNetCore.SwaggerUI.DocExpansion.None);
+                });
+            }
 
             app.UseHttpsRedirection();
 
