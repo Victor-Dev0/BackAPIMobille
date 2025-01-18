@@ -9,6 +9,7 @@ namespace BackAPI.AutoMapper
         public AutoMapper()
         {
             CreateMap<Usuario, UsuarioDTO>().ReverseMap();
+            CreateMap<Cliente, ClienteDTO>().ReverseMap();
         }
     }
 }
