@@ -1,0 +1,11 @@
+version: "3.7"
+
+services:
+    api_mobile:
+        container_name: "api_mobile"
+        build:
+            context: .
+            dockerfile: Dockerfile
+        image: api_mobile
+        ports:
+            - "5001:5080"
